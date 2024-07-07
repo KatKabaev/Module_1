@@ -1,0 +1,40 @@
+grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
+students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+
+gr_1 = grades[0]
+gr_2 = grades[1]
+gr_3 = grades[2]
+gr_4 = grades[3]
+gr_5 = grades[4]
+
+students_tuple = tuple(sorted(students))
+
+sum_1 = sum(gr_1)
+len_1 = len(gr_1)
+srb_1 = sum_1 / len_1
+
+sum_2 = sum(gr_2)
+len_2 = len(gr_2)
+srb_2 = sum_2 / len_2
+
+sum_3 = sum(gr_3)
+len_3 = len(gr_3)
+srb_3 = sum_3 / len_3
+
+sum_4 = sum(gr_4)
+len_4 = len(gr_4)
+srb_4 = sum_4 / len_4
+
+sum_5 = sum(gr_5)
+len_5 = len(gr_5)
+srb_5 = sum_5 / len_5
+
+srb = []
+srb.append(srb_1)
+srb.append(srb_2)
+srb.append(srb_3)
+srb.append(srb_4)
+srb.append(srb_5)
+
+students_and_srb = dict(zip(students_tuple, srb))
+print(students_and_srb)
